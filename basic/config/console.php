@@ -14,6 +14,16 @@ $config = [
         '@tests' => '@app/tests',
     ],
     'components' => [
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableStrictParsing' => false,
+            'suffix' => '.html',
+            'rules' => [
+                'get-finance-detail'=>'/finance/detail',
+                'set-new-detail'=>'/finance/add'
+            ],
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
