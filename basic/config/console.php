@@ -13,21 +13,7 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
         '@tests' => '@app/tests',
     ],
-    'components' => [
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'enableStrictParsing' => true,
-            'suffix' => '',
-            'rules' => [
-                'get-finance-detail'=>'/finance/detail',
-                'set-new-detail'=>'/finance/add',
-                '<controller:\w+>/<id:\d+>' => '<controller>/view',
-                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-                
-            ],
-        ],
+    'components' => [       
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
