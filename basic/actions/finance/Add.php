@@ -2,6 +2,9 @@
 
 namespace app\actions\finance;
 
+use yii;
+use app\models\FinanceDetail;
+
 class add extends yii\base\Action {
     
     public function run() {

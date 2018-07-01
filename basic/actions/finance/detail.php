@@ -3,8 +3,9 @@
 namespace app\actions\finance;
 
 use app\models\FinanceDetail;
+use yii;
 
-class detail extends \yii\base\Action {
+class detail extends yii\base\Action {
     
     public function run() {
         
