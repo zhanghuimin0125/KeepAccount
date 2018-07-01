@@ -13,6 +13,7 @@ use app\models\ContactForm;
 class FinanceController extends Controller
 {
 
+    public $enableCsrfValidation = false;
     public function actions(){
         return [
             //列表
