@@ -2,7 +2,9 @@
 
 namespace app\actions\finance;
 
-class detail extends yii\base\Action {
+use app\models\FinanceDetail;
+
+class detail extends \yii\base\Action {
     
     public function run() {
         
