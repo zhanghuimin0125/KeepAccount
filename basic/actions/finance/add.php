@@ -13,9 +13,9 @@ class add extends yii\base\Action {
             $valid_post = $this->checkPost($post);
             
             $model = new FinanceDetail();
-            $model->finance_name = $valid_post['fiance_name'];
-            $model->finance_money = $valid_post['fiance_money'];
-            $model->finance_time = $valid_post['create_time'];
+            $model->finance_name = $valid_post['finance_name'];
+            $model->finance_money = $valid_post['finance_money'];
+            $model->create_time = $valid_post['finance_date'];
             
             if($model->save(false)){
                 return json_encode(array('code'=>'0'));
