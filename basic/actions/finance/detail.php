@@ -10,7 +10,7 @@ class detail extends yii\base\Action {
     public function run() {
         
         $rows = FinanceDetail::find()->all();
-        $return_data = $this->returnJson($rows,$success);
+        $return_data = $this->returnJson($rows);
         return $return_data;
         
     }
