@@ -29,7 +29,7 @@ class add extends yii\base\Action {
     
     private function checkPost($post){
         //此处需要验证一些参数，如金额是否是数字等，暂省
-        return json_decode($post);
+        return json_decode($post,true);
     }
 
 
